@@ -2,19 +2,25 @@
   "name": "bugly_symbol_uploader",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
+  "main": "dist/main.js",
+  "bin": {
+    "buglySymbolUploader": "dist/main.js"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "build": "etsc",
+    "serve": "nodemon"
   },
   "dependencies": {
-    "vue": "^3.2.45"
+    "commander": "^9.4.1",
+    "figlet": "^1.5.2"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.0.0",
-    "vue-tsc": "^1.0.11"
+    "@types/figlet": "^1.5.5",
+    "@types/node": "^18.11.17",
+    "esbuild": "^0.16.10",
+    "esbuild-node-tsc": "^2.0.2",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.3"
   }
 }
