@@ -3,10 +3,26 @@
     "rootDir": "src",
     "outDir": "dist",
     "strict": true,
-    "target": "ES6",
-    "module": "CommonJS",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "sourceMap": true,
     "esModuleInterop": true,
-    "moduleResolution": "Node",
-  }
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.json"
+  ]
 }
