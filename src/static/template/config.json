@@ -4,7 +4,8 @@
   "bundleId": "",
   "version": "",
   "platform": "IOS",
-  "path": "",
+  "symbolZipPath": "",
+  "buglyqqUploadSymbolJarPath": "",
   "symbols": [
     ""
   ]
