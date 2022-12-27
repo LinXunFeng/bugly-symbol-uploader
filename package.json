@@ -8,6 +8,9 @@
     "url": "https://github.com/LinXunFeng/bugly-symbol-uploader.git"
   },
   "homepage": "https://github.com/LinXunFeng/bugly-symbol-uploader",
+  "keywords": [
+    "bugly"
+  ],
   "type": "commonjs",
   "main": "dist/main.js",
   "bin": {
