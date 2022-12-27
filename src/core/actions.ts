@@ -22,7 +22,7 @@ const upload = async (filepath: string | null) => {
     return;
   }
   const config = readConfig(filepath!);
-  console.log(`config -- ${config.platform}`);
+  // console.log(`config -- ${config.platform}`);
   const {
     appId,
     appKey,
