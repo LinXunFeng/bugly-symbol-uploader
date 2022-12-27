@@ -1,6 +1,7 @@
 {
-  "name": "bugly_symbol_uploader",
-  "private": true,
+  "name": "bugly-symbol-uploader",
+  "author": "LinXunFeng",
+  "description": "对Bugly符号表上传工具进行封装使用",
   "version": "0.0.1",
   "type": "commonjs",
   "main": "dist/main.js",
@@ -10,7 +11,8 @@
   "scripts": {
     "prebuild": "node -p \"'export const LIB_VERSION = ' + JSON.stringify(require('./package.json').version) + ';'\" > src/version.ts",
     "build": "npm run prebuild && etsc",
-    "serve": "npm run prebuild && nodemon"
+    "serve": "npm run prebuild && nodemon",
+    "release": "npm run build && npm publish"
   },
   "dependencies": {
     "child_process": "^1.0.2",
