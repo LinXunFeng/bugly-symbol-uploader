@@ -5,7 +5,7 @@
 全局安装
 
 ```shell
-npm install buglySymbolUploader -g 
+npm i bugly-symbol-uploader -g
 ```
 
 ## 使用
