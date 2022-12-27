@@ -11,6 +11,9 @@
   "keywords": [
     "bugly"
   ],
+  "files": [
+    "dist"
+  ],
   "type": "commonjs",
   "main": "dist/main.js",
   "bin": {
