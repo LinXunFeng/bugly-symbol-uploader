@@ -8,11 +8,12 @@ import { registerCommands } from './core/commands.js';
 // https://stackoverflow.com/a/67701490/8577739
 import { LIB_VERSION } from './version.js';
 
-console.log(figlet.textSync("Bugly Symbol"));
+console.log(figlet.textSync("Bugly Symbol").green);
 
 const program = new Command();
 program
-  .version(LIB_VERSION)
+  .version(LIB_VERSION, '-v, --vers', '查看当前版本')
+  .helpOption('-h, --help', '查看帮助信息')
   .description("Bugly符号表上传工具");
 
 // 帮助信息
