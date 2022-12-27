@@ -1,4 +1,4 @@
-# Bugly符号表上传工具
+# Bugly符号表上传辅助工具
 
 ## 安装
 
@@ -32,12 +32,14 @@ buglySymbolUploader init
 }
 ```
 
+
+
 `Bugly` 相关的参数就不做说明了
 
 |`字段`|描述|
 |-|-|
-|`buglyqqUploadSymbolJarPath`|`buglyqq-upload-symbol.jar` 文件的路径|
-|`symbolZipPath`|符号表的压缩文件|
+|`buglyqqUploadSymbolJarPath`|`buglyqq-upload-symbol.jar` 文件的路径（请使用绝对路径）|
+|`symbolZipPath`|符号表的压缩文件（请使用绝对路径）|
 |`symbols`|需要上传的所有符号表|
 
 ```shell
