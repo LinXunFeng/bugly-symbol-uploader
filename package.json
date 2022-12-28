@@ -1,5 +1,5 @@
 {
-  "name": "bugly-symbol-uploader",
+  "name": "buglysu",
   "author": "LinXunFeng",
   "description": "对Bugly符号表上传工具进行封装使用",
   "version": "0.0.1",
@@ -17,7 +17,7 @@
   "type": "commonjs",
   "main": "dist/main.js",
   "bin": {
-    "buglySymbolUploader": "dist/main.js"
+    "buglysu": "dist/main.js"
   },
   "scripts": {
     "prebuild": "node -p \"'export const LIB_VERSION = ' + JSON.stringify(require('./package.json').version) + ';'\" > src/version.ts",
