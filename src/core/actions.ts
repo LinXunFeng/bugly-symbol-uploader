@@ -23,7 +23,7 @@ const upload = async (filepath: string | null) => {
   }
   const config = readConfig(filepath!);
   // console.log(`config -- ${config.platform}`);
-  const {
+  let {
     appId,
     appKey,
     bundleId,
@@ -40,6 +40,14 @@ const upload = async (filepath: string | null) => {
   // 解压
   await unZip(symbolZipPath, tempDsymPath);
 
+  if (_.isEmpty(symbols)) { // 空则上传全部
+    symbols = fs.readdirSync(tempDsymPath);
+    // console.log(symbols);
+    if (_.isEmpty(symbols)) {
+      console.log('没有找到需要上传的符号表');
+      return;
+    }
+  }
   for (let index = 0; index < symbols.length; index++) {
     const symbolName = symbols[index];
     const symbolFilePath = path.resolve(tempDsymPath, symbolName);
