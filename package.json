@@ -2,7 +2,7 @@
   "name": "buglysu",
   "author": "LinXunFeng",
   "description": "对Bugly符号表上传工具进行封装使用",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/LinXunFeng/bugly-symbol-uploader.git"
