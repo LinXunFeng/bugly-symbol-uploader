@@ -63,7 +63,7 @@ buglysu init
 |-|-|
 |`buglyqqUploadSymbolJarPath`|`buglyqq-upload-symbol.jar` 文件的路径（请使用绝对路径）|
 |`symbolZipPath`|符号表的压缩文件（请使用绝对路径）|
-|`symbols`|需要上传的所有符号表|
+|`symbols`|需要上传的所有符号表（空则全部上传）|
 
 ```shell
 # buglysu -f 配置文件
